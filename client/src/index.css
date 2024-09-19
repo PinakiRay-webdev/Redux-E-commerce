@@ -50,3 +50,12 @@
     display: none;
 }
 
+#productPrice p:first-child{
+    background-color: black;
+    color: white;
+}
+
+#productPrice p:active{
+    background-color: black;
+    color: white;
+}

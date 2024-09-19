@@ -6,10 +6,11 @@ const Products = () => {
   const myProducts = useSelector((state) => state.product.productInfo);
 
   return (
-    <div id="heroBannerData" className="w-full relative top-[-50vh]">
+    <div id="heroBannerData" className="w-full absolute top-[50vh]">
       <div className="productCat px-3 py-2 h-[60vh]">
         {myProducts.productData.map((element, id) => (
           <div
+            key={id}
             id={"productCat" + element.id}
             className="h-full w-full relative cursor-pointer"
           >

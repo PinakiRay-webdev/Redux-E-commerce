@@ -58,12 +58,14 @@ const Navbar = () => {
           </div>
 
           {/* cart part  */}
+          <Link to={'/cart'} >          
           <div className="flex items-end">
             <p className="text-white text-3xl">
               <IoIosCart />
             </p>
             <span className="text-xs text-white">Cart</span>
           </div>
+          </Link>
         </div>
       </div>
     </div>

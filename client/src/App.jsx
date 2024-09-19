@@ -7,6 +7,8 @@ import GrocerryBG from "./Components/Banners/GrocerryBG";
 import ProductDetails from "./Components/ProductDetails";
 import GrocerrySection from "./Components/GrocerrySection";
 import ElectronicSection from "./Components/ElectronicSection";
+import Fashion from "./Components/Fashion";
+import Cart from "./Components/Cart";
 const App = () => {
   const myRouter = createBrowserRouter([
     {
@@ -48,6 +50,24 @@ const App = () => {
       path : "/electronics/:id",
       element: (
         <><Navbar/><ProductDetails cat="Electronics" /></>
+      )
+    },
+    {
+      path : "/fashion",
+      element: (
+        <><Navbar/><Fashion/></>
+      )
+    },
+    {
+      path : "/fashion/:id",
+      element: (
+        <><Navbar/><ProductDetails cat="Fashion"/></>
+      )
+    },
+    {
+      path : '/cart',
+      element:(
+        <><Navbar/><Cart/></>
       )
     }
   ]);
